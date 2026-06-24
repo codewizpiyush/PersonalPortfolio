@@ -1,0 +1,83 @@
+/* src/sections/Education.css */
+
+.education__timeline {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.education__item {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 24px;
+}
+
+.education__marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  box-shadow: 0 0 0 5px var(--accent-soft);
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.education__line {
+  width: 2px;
+  flex: 1;
+  background: var(--border-strong);
+  margin-top: 6px;
+}
+
+.education__card {
+  padding: 24px 26px;
+  margin-bottom: 28px;
+}
+
+.education__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.education__degree {
+  font-size: 19px;
+}
+
+.education__metric {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.education__field {
+  margin-top: 8px;
+  font-size: 14.5px;
+  color: var(--text);
+}
+
+.education__institution {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.education__duration {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-mute);
+}

@@ -1,0 +1,60 @@
+/* src/sections/About.css */
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about__bio {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about__bio p {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
+
+.about__card {
+  padding: 28px;
+  position: sticky;
+  top: 110px;
+}
+
+.about__card-title {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.about__highlight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about__highlight-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--text);
+}
+
+.about__check {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__card {
+    position: static;
+  }
+}

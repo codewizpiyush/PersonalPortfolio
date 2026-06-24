@@ -1,0 +1,88 @@
+/* src/sections/Experience.css */
+
+.experience__list {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience__card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 22px;
+  padding: 30px;
+}
+
+.experience__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--gradient-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.experience__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.experience__role {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+
+.experience__company {
+  font-size: 14.5px;
+  color: var(--accent);
+}
+
+.experience__duration {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--text-mute);
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.experience__points {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience__points li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+.experience__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .experience__card {
+    grid-template-columns: 1fr;
+  }
+  .experience__icon {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,40 @@
+/* src/components/LoadingScreen.css */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-screen__terminal {
+  font-family: var(--font-mono);
+  color: #e5e7eb;
+  font-size: 15px;
+  width: min(360px, 80vw);
+}
+
+.loading-screen__prompt {
+  color: #38bdf8;
+}
+
+.loading-screen__cmd {
+  color: #e5e7eb;
+}
+
+.loading-screen__bar-track {
+  margin-top: 18px;
+  height: 3px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.loading-screen__bar-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+}
