@@ -33,7 +33,7 @@ export default function Resume() {
             ))}
           </ul>
 
-          <a href="https://drive.google.com/file/d/1k2yW-bY7LdryqpcIAJ8CCGuEc1EwWTR5/view?usp=sharing" className="btn btn--primary" download>
+          <a href="https://drive.google.com/file/d/1BRU0-7QFi7cmc_tVj7oT0qI99vbsatox/view?usp=sharing" className="btn btn--primary" download>
             Download Resume <FiDownload />
           </a>
         </motion.div>
